@@ -1,4 +1,4 @@
-import { Box, Link } from "@chakra-ui/react";
+import { Box, Link, Flex } from "@chakra-ui/react";
 import styles from "../../styles/NavBar.module.css";
 
 interface NavBarProps {
@@ -20,10 +20,14 @@ const NavBar = () => {
       name: "Projects",
       route: "/projects",
     },
+    {
+      name: "About Me",
+      route: "/about",
+    },
   ];
 
   return (
-    <Box className={styles.navbar}>
+    <Flex className={styles.navbar} flexWrap="wrap" as="nav" zIndex={999}>
       <Box>
         <Link
           color="#000"
@@ -66,7 +70,7 @@ const NavBar = () => {
       <Box>
         <p style={{ color: "#000" }}> Color Scheme</p>
       </Box>
-    </Box>
+    </Flex>
   );
 };
 

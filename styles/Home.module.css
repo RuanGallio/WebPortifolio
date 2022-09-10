@@ -1,14 +1,10 @@
-.container {
-  padding: 0 2rem;
-}
 
 .main {
-  height: 100%;
-  padding: 4rem 0;
+  width: 100vw;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
 }
 
 .title a {
@@ -54,7 +50,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   width: 100%;
 }
 
