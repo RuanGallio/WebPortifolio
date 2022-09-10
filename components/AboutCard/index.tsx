@@ -30,7 +30,7 @@ const AboutCard = (props: AboutCardProps) => {
         borderColor: props.color,
       }}
     >
-      <props.icon size={100} key={`${props.icon.name}`} />
+      <props.icon size="30%" key={`${props.icon.name}`} />
       <h1 key={props.title}>{props.title}</h1>
       <p key={props.text}>{props.text}</p>
     </Box>

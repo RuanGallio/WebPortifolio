@@ -6,19 +6,23 @@
     justify-content: center;
     padding: 10px;
     margin: 10px;
-    width: 400px;
-    height: 400px;
-    border-right: 2px solid #eaeaea;
-    border-top: 2px solid #eaeaea;
-    border-bottom: 3px solid #d6d6d6;
+    height: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background-color: #fff;
     border-radius: 20px;
-
     background-size: 200%;
     transition: background-position .3s cubic-bezier(.47, .1, 1, .63), border 0.2s linear;
     transition-delay: 0.0s, 0.15s;
 }
 
+.grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
 .aboutcard:hover {
     background-position: -100% 100%;
 }

@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import Head from "next/head";
 import AboutCard from "../components/AboutCard";
 import Layout from "../components/Layout";
@@ -40,38 +40,36 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <Layout>
-        <Head>
-          <title>Ruan Gallio's portfolios Home Screen</title>
-        </Head>
-        <Box className={styles.main}>
-          <Box
-            display="flex"
-            flexDirection="column"
-            width="100%"
-            alignItems="center"
-            alignContent={"center"}
-            justifyContent="center"
-          >
-            <h1 className={styles.title}>
-              Hello there, I'm <Text color="#ff688c">Ruan Gallio.</Text>
-            </h1>
-            <Text className={styles.description}>
-              And I'm a Software Developer.
-            </Text>
-          </Box>
-          <Box className={styles.grid}>
-            {cards.map((card) => (
-              <AboutCard
-                title={card.title}
-                color={card.color}
-                icon={card.icon}
-                text={card.text}
-              />
-            ))}
-          </Box>
+      <Head>
+        <title>Ruan Gallio's portfolios Home Screen</title>
+      </Head>
+      <Flex flexDirection="column" flexWrap="wrap">
+        <Box
+          display="flex"
+          flexDirection="column"
+          width="100%"
+          alignItems="center"
+          alignContent={"center"}
+          justifyContent="center"
+        >
+          <h1 className={styles.title}>
+            Hello there, I'm <Text color="#ff688c">Ruan Gallio.</Text>
+          </h1>
+          <Text className={styles.description}>
+            And I'm a Software Developer.
+          </Text>
         </Box>
-      </Layout>
+        <Box className={styles.grid}>
+          {cards.map((card) => (
+            <AboutCard
+              title={card.title}
+              color={card.color}
+              icon={card.icon}
+              text={card.text}
+            />
+          ))}
+        </Box>
+      </Flex>
     </>
   );
 };
