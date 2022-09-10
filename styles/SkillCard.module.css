@@ -1,0 +1,19 @@
+.skillcard {
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Make it slightly bigger on hover with a little delay*/
+.skillcard:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
